@@ -1,0 +1,38 @@
+<html><body>
+<table border="1" cellpadding="7" cellspacing="7">
+  <tr>
+    <th width="50px">No</th>
+    <th>8-9</th>
+    <th>9-10</th>
+    <th>10-11</th>
+    <th>11-12</th>
+    <th>12-1</th>
+    <th>1-2</th>
+    <th>2-3</th>
+    <th>3-4</th>
+    <th>4-5</th>
+    <th>5-6</th>
+  </tr>
+  <% if(rm.length){ 
+    for(var i = 0;i < rm.length;i++) { %>
+  <tr>
+  	<td><%=(i+1)%></td>
+    <td><table><tr><td><%=sub[i].A%></td></tr><tr><td><%=teach[i].A%></td></tr><tr><td><%=rm[i].A%></td></tr></table></td>
+    <td><table><tr><td><%=sub[i].B%></td></tr><tr><td><%=teach[i].B%></td></tr><tr><td><%=rm[i].B%></td></tr></table></td>
+    <td><table><tr><td><%=sub[i].C%></td></tr><tr><td><%=teach[i].C%></td></tr><tr><td><%=rm[i].C%></td></tr></table></td>
+    <td><table><tr><td><%=sub[i].D%></td></tr><tr><td><%=teach[i].D%></td></tr><tr><td><%=rm[i].D%></td></tr></table></td>
+    <td><table><tr><td><%=sub[i].E%></td></tr><tr><td><%=teach[i].E%></td></tr><tr><td><%=rm[i].E%></td></tr></table></td>
+    <td><table><tr><td><%=sub[i].F%></td></tr><tr><td><%=teach[i].F%></td></tr><tr><td><%=rm[i].F%></td></tr></table></td>
+    <td><table><tr><td><%=sub[i].G%></td></tr><tr><td><%=teach[i].G%></td></tr><tr><td><%=rm[i].G%></td></tr></table></td>
+    <td><table><tr><td><%=sub[i].H%></td></tr><tr><td><%=teach[i].H%></td></tr><tr><td><%=rm[i].H%></td></tr></table></td>
+    <td><table><tr><td><%=sub[i].I%></td></tr><tr><td><%=teach[i].I%></td></tr><tr><td><%=rm[i].I%></td></tr></table></td>
+    <td><table><tr><td><%=sub[i].J%></td></tr><tr><td><%=teach[i].J%></td></tr><tr><td><%=rm[i].J%></td></tr></table></td>
+  </tr>
+  <% }
+  }else{ %>
+  <tr>
+    <td colspan="3">No user</td>
+  </tr>
+<% } %>
+</table>
+</body></html>

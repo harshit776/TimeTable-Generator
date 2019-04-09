@@ -1,0 +1,165 @@
+<style>
+h1 
+{
+  position: absolute;
+  top: 50px;
+  right: 250px;
+}
+body
+{
+  background-image: url("9.jpg");
+  height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div
+{
+  background: linear-gradient(to top left, #003333 0%, #CCCCFF 100%);
+  position: absolute;
+  top: 100px;
+    right: 140px;
+    width: 300px;
+    border: 3px solid #000000;
+}
+button 
+{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 8px;
+  border: none;
+  cursor: pointer;
+  width: 95%;
+}
+input
+{
+  width: 95%;
+  padding: 12px 20px;
+  margin: 8px 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+h2
+{
+  position: absolute;
+  top: 465px;
+    right: 140px;
+    color: #3333CC;
+}
+.imgcontainer 
+{
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+img.avatar 
+{
+  width: 40%;
+  border-radius: 50%;
+}
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+ul 
+{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li.left 
+{
+  float: left;
+}
+
+li.right 
+{
+  float: right;
+}
+
+li a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover 
+{
+  background-color: #c1b779;
+}
+font
+{
+  color:#c1b779;
+}
+
+</style>
+
+<HEAD>
+  <SCRIPT type="text/javascript">
+  window.history.forward();
+  function noBack() { window.history.forward(); }
+</SCRIPT>
+</HEAD>
+<BODY onload="noBack();" 
+  onpageshow="if (event.persisted) noBack();" onunload="">
+</BODY>
+
+<ul>
+  <li class="left"><a href="/">Home</a></li>
+  <li class="left"><a href="news.asp">News</a></li>
+  <li class="left"><a href="contact.asp">Contact</a></li>
+  <li class="left"><a href="about.asp">About</a></li>
+  <li class="right"><a href="/logout" target="_self">Logout</a></li>
+  <li class="right"><font size="6"><%=username%></font></li>
+</ul> 
+
+<body>
+<table border="1" cellpadding="7" cellspacing="7" bgcolor="#98FB98" align="center" style="margin-top:50px">
+  <tr>
+    <th width="50px">No</th>
+    <th>8-9</th>
+    <th>9-10</th>
+    <th>10-11</th>
+    <th>11-12</th>
+    <th>12-1</th>
+    <th>1-2</th>
+    <th>2-3</th>
+    <th>3-4</th>
+    <th>4-5</th>
+    <th>5-6</th>
+  </tr>
+  <% if(rm.length){ 
+    for(var i = 0;i < 5;i++) { %>
+  <tr>
+    <td><%=(i+1)%></td>
+    <td><table><tr><td><%=sub[i].A%></td></tr><tr><td><%=teach[i].A%></td></tr><tr><td><%=rm[i].A%></td></tr></table></td>
+    <td><table><tr><td><%=sub[i].B%></td></tr><tr><td><%=teach[i].B%></td></tr><tr><td><%=rm[i].B%></td></tr></table></td>
+    <td><table><tr><td><%=sub[i].C%></td></tr><tr><td><%=teach[i].C%></td></tr><tr><td><%=rm[i].C%></td></tr></table></td>
+    <td><table><tr><td><%=sub[i].D%></td></tr><tr><td><%=teach[i].D%></td></tr><tr><td><%=rm[i].D%></td></tr></table></td>
+    <td><table><tr><td><%=sub[i].E%></td></tr><tr><td><%=teach[i].E%></td></tr><tr><td><%=rm[i].E%></td></tr></table></td>
+
+    <td><table><tr><td>Lunch</td></tr><tr><td>Lunch</td></tr><tr><td>Lunch</td></tr></table></td>
+
+    <td><table><tr><td><%=sub[i].F%></td></tr><tr><td><%=teach[i].F%></td></tr><tr><td><%=rm[i].F%></td></tr></table></td>
+    <td><table><tr><td><%=sub[i].G%></td></tr><tr><td><%=teach[i].G%></td></tr><tr><td><%=rm[i].G%></td></tr></table></td>
+    <td><table><tr><td><%=sub[i].H%></td></tr><tr><td><%=teach[i].H%></td></tr><tr><td><%=rm[i].H%></td></tr></table></td>
+    <td><table><tr><td><%=sub[i].I%></td></tr><tr><td><%=teach[i].I%></td></tr><tr><td><%=rm[i].I%></td></tr></table></td>
+    <td><table><tr><td><%=sub[i].J%></td></tr><tr><td><%=teach[i].J%></td></tr><tr><td><%=rm[i].J%></td></tr></table></td>
+  </tr>
+  <% }
+  }else{ %>
+  <tr>
+    <td colspan="3">No user</td>
+  </tr>
+<% } %>
+</table>
+</body>
