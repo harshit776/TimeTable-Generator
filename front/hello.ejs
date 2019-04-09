@@ -1,0 +1,160 @@
+<style>
+body
+{
+	background-image: url("9.jpg");
+	height: 100%;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-position: 0 -20px;
+}
+
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+ul 
+{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li.left 
+{
+  float: left;
+}
+
+li.right 
+{
+  float: right;
+}
+
+a.timetable1
+{
+	position: absolute;
+	top: 150px;
+	left: 100px;
+	background-color: white;
+ 	color: black;
+  	border: 2px solid #4CAF50; 
+  	padding: 15px 44px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+}
+
+a.timetable2
+{
+	position: absolute;
+	top: 200px;
+	left: 100px;
+	background-color: white;
+ 	color: black;
+  	border: 2px solid #4CAF50; 
+  	padding: 15px 43.5px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+}
+
+a.timetable3
+{
+	position: absolute;
+	top: 250px;
+	left: 100px;
+	background-color: white;
+ 	color: black;
+  	border: 2px solid #4CAF50; 
+  	padding: 15px 49px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+}
+
+a.timetable4
+{
+	position: absolute;
+	top: 300px;
+	left: 100px;
+	background-color: white;
+ 	color: black;
+  	border: 2px solid #4CAF50; 
+  	padding: 15px 37.5px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline;
+  	font-size: 16px;
+}
+
+a.timetable5
+{
+	position: absolute;
+	top: 350px;
+	left: 100px;
+	background-color: white;
+ 	color: black;
+  	border: 2px solid #4CAF50; 
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+}
+li a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+font
+{
+	color:#c1b779;
+}
+h1 
+{
+	position: absolute;
+	top: 60px;
+	left: 100px;
+}
+li a:hover 
+{
+  background-color: #c1b779;
+}
+</style>
+
+<HEAD>
+	<SCRIPT type="text/javascript">
+	window.history.forward();
+	function noBack() { window.history.forward(); }
+</SCRIPT>
+</HEAD>
+<BODY onload="noBack();" 
+	onpageshow="if (event.persisted) noBack();" onunload="">
+</BODY>
+
+ <ul>
+  <li class="left"><a href="/">Home</a></li>
+  <li class="left"><a href="news.asp">News</a></li>
+  <li class="left"><a href="contact.asp">Contact</a></li>
+  <li class="left"><a href="about.asp">About</a></li>
+  <li class="right"><a href="/logout" target="_self">Logout</a></li>
+  <li class="right"><font size="6"><%=username%></font></li>
+</ul> 
+
+<h1>VIEW TIMETABLE</h1>
+
+<a class="timetable1" href="/cse"> CSE </a>
+<a class="timetable2" href="/ECE"> ECE </a>
+<a class="timetable3" href="/ee"> EE </a>
+<a class="timetable4" href="/civil"> CIVIL </a>
+<a class="timetable5" href="/metta"> METTA </a>
