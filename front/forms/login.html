@@ -1,0 +1,131 @@
+<style>
+h1 
+{
+ 	position: absolute;
+ 	top: 50px;
+  right: 250px;
+}
+body
+{
+	background-image: url("4.jpg");
+	height: 100%;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+div
+{
+	background: linear-gradient(to top left, #003333 0%, #CCCCFF 100%);
+	position: absolute;
+ 	top: 100px;
+  	right: 140px;
+  	width: 300px;
+  	border: 3px solid #000000;
+}
+button 
+{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 8px;
+  border: none;
+  cursor: pointer;
+  width: 95%;
+}
+input
+{
+  width: 95%;
+  padding: 12px 20px;
+  margin: 8px 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+h2
+{
+	position: absolute;
+ 	top: 465px;
+  	right: 140px;
+  	color: #3333CC;
+}
+.imgcontainer 
+{
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+img.avatar 
+{
+  width: 40%;
+  border-radius: 50%;
+}
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+ul 
+{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li.left 
+{
+  float: left;
+}
+
+li.right 
+{
+  float: right;
+}
+
+li a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover 
+{
+  background-color: #c1b779;
+}
+</style>
+
+<HEAD>
+  <SCRIPT type="text/javascript">
+  window.history.forward();
+  function noBack() { window.history.forward(); }
+</SCRIPT>
+</HEAD>
+<BODY onload="noBack();" 
+  onpageshow="if (event.persisted) noBack();" onunload="">
+</BODY>
+ <ul>
+  <li class="left"><a href="/">Home</a></li>
+  <li class="left"><a href="news.asp">News</a></li>
+  <li class="left"><a href="contact.asp">Contact</a></li>
+  <li class="left"><a href="about.asp">About</a></li>
+  <li class="right"><a href="/register.html" target="_self">Create Account</a></li>
+  <li class="right"><a href="/login.html" target="_self">Login</a></li>
+</ul> 
+
+
+<h1>LOGIN</h1>
+<div class="imgcontainer">
+    <form name="login" action="/login" method="POST" accept-charset="utf-8">
+    <img src="male.jpg" alt="Avatar" class="avatar"><br>
+    <label for="email"><b>Email</b></label><br>
+    <input type="email" name="email" placeholder="yourname@email.com" required><br>
+    <label for="password"><b>Password</b></label><br>
+    <input type="password" name="password" placeholder="password" required><br>
+     <button type="submit">Login</button>
+  </ul>
+</form>
+</div>

@@ -1,0 +1,68 @@
+<style>
+body
+{
+	background-image: url("9.jpg");
+	height: 100%;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-position: 0 -20px;
+}
+
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+ul 
+{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li.left 
+{
+  float: left;
+}
+
+li.right 
+{
+  float: right;
+}
+
+li a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover 
+{
+  background-color: #c1b779;
+}
+</style>
+<HEAD>
+  <SCRIPT type="text/javascript">
+  window.history.forward();
+  function noBack() { window.history.forward(); }
+</SCRIPT>
+</HEAD>
+<BODY onload="noBack();" 
+  onpageshow="if (event.persisted) noBack();" onunload="">
+</BODY>
+
+ <ul>
+  <li class="left"><a href="/">Home</a></li>
+  <li class="left"><a href="news.asp">News</a></li>
+  <li class="left"><a href="contact.asp">Contact</a></li>
+  <li class="left"><a href="about.asp">About</a></li>
+  <li class="right"><a href="/register.html" target="_self">Create Account</a></li>
+  <li class="right"><a href="/login.html" target="_self">Login</a></li>
+</ul> 
